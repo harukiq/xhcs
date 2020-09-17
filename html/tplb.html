@@ -1,0 +1,76 @@
+﻿<!DOCTYPE HTML>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>西湖绸伞</title>
+<link rel="stylesheet" href="../css/lb.css">
+<script src="../js/lb.js"></script>
+<script>
+window.onload = function () {
+
+const options = {
+	id: 'lb-1',              
+	speed: 600,             
+	delay: 3000,             
+	direction: 'left',       
+	moniterKeyEvent: true,   
+	moniterTouchEvent: true  
+}
+const lb = new Lb(options);
+lb.start();
+}
+</script>
+</head>
+
+<body>
+<div class="lb-box" id="lb-1">
+<div class="lb-content">
+<div class="lb-item active">
+	<a href="#">
+	<img src="../img/t1.png" alt="picture loss">
+	</a>
+</div>
+<div class="lb-item">
+	<a href="#">
+	<img src="../img/t2.png" alt="picture loss">
+	</a>
+</div>
+<div class="lb-item">
+	<a href="#">
+	<img src="../img/t3.png" alt="picture loss">
+	</a>
+</div>
+<div class="lb-item">
+	<a href="#">
+	<img src="../img/t4.png" alt="picture loss">
+	</a>
+</div>
+<div class="lb-item">
+	<a href="#">
+	<img src="../img/t5.png" alt="picture loss">
+	</a>
+</div>   
+<div class="lb-item">
+	<a href="#">
+	<img src="../img/t6.png" alt="picture loss">
+	</a>
+</div>      
+</div>
+<ol class="lb-sign">
+	<li class="active">1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+	<li>6</li>
+	</ol>
+<div class="lb-ctrl left">＜</div>
+<div class="lb-ctrl right">＞</div>
+</div>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';color:#ffffff">
+</div>
+</body>
+</html>

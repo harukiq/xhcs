@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>index</title>
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+<style type="text/css">
+body{background-color: #272727}
+.bannerBox{
+	width: 1024px;
+	height: 768px;
+	position: relative;
+	margin: 50px auto 0px;
+	cursor: pointer;
+}
+.bannerBox:hover .left{
+	display: block;
+}
+.bannerBox:hover .right{
+	display: block;
+}
+#swiper1,#swiper2{
+	width: 1024px;
+	height: 768px;			
+}
+#swiper1{
+	filter:alpha(opacity=95);   
+	-moz-opacity:0.95;     
+	opacity: 0.95;   				
+}
+#swiper2{
+	position: absolute;
+	left: 0;top: 0;
+}
+#swiper1 .swiper-slide,#swiper1 img{
+	width: 1024px;
+	height: 768px;
+	font-size: 100px;
+	line-height: 280px;
+	text-align: center;
+	object-fit: cover;
+}
+#swiper2 .swiper-slide,#swiper2 img{
+	width: 1024px;
+	height: 768px;
+	font-size: 100px;
+	line-height: 280px;
+	text-align: center;
+	object-fit: cover;				
+}
+#swiper2 .swiper-slide{
+	overflow: hidden;
+}
+.direction img{
+	margin-top: 12px;
+}
+.left{
+	position: absolute;
+	top: 300px;
+	width: 26px;
+	height: 65px;
+	background-color: rgba(64,64,64,0.6);
+	text-align: center;
+	line-height: 65px;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+	z-index: 2;
+	display: none;
+}
+.left img{
+	width:15px ;
+	height: 28px;
+	margin-top: 18px;
+	margin-right: 3px;				
+}
+.right{
+	position: absolute;
+	top: 300px;
+	right: 0;
+	width: 26px;
+	height: 65px;
+	background-color: rgba(64,64,64,0.6);
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
+	z-index: 2;	
+	display: none;			
+}
+.right img{
+	width:15px ;
+	height: 28px;
+	margin-top: 18px;
+	margin-left: 6px;				
+}
+/*css3动画*/
+#swiper2 img{
+	transition: all .4s;
+}
+#swiper2 img:hover{
+	-ms-transform:scale(1.1); /* IE 9 */
+	-webkit-transform: scale(1.1); /* Safari */
+	transform: scale(1.1); /* 标准语法 */
+}
+</style>
+
+</head>
+<body>
+<div class="bannerBox">
+	<div class="swiper-container" id="swiper1">
+		<div class="swiper-wrapper swiper-no-swiping" >
+			<div class="swiper-slide color-red">
+				<img src="../img/1.png">
+			</div>
+			<div class="swiper-slide color-blue">
+				<img src="../img/2.png">
+			</div>
+			<div class="swiper-slide color-yellow">
+				<img src="../img/3.png">
+			</div>
+			<div class="swiper-slide color-green">
+				<img src="../img/4.png">
+			</div>
+			<div class="swiper-slide color-pink">
+				<img src="../img/5.png">
+            </div>
+            <div class="swiper-slide color-red">
+				<img src="../img/6.png">
+            </div>
+            <div class="swiper-slide color-red">
+				<img src="../img/7.png">
+            </div>
+            <div class="swiper-slide color-red">
+				<img src="../img/8.png">
+            </div>
+            <div class="swiper-slide color-red">
+				<img src="../img/9.png">
+            </div>
+            <div class="swiper-slide color-red">
+				<img src="../img/10.png">
+            </div>
+            <div class="swiper-slide color-red">
+				<img src="../img/11.png">
+            </div>
+            <div class="swiper-slide color-red">
+				<img src="../img/12.png">
+            </div>
+            <div class="swiper-slide color-red">
+				<img src="../img/13.png">
+            </div>
+            <div class="swiper-slide color-red">
+				<img src="../img/14.png">
+            </div>
+            <div class="swiper-slide color-red">
+				<img src="../img/15.png">
+            </div>
+            <div class="swiper-slide color-red">
+				<img src="../img/16.png">
+            </div>
+            <div class="swiper-slide color-red">
+				<img src="../img/17.png">
+            </div>
+            <div class="swiper-slide color-red">
+				<img src="../img/18.png">
+            </div>
+            <div class="swiper-slide color-red">
+				<a href="./content.html"><img src="../img/19.png"></a>
+			</div>
+		</div>
+	</div>
+		
+	<div class="left"><img src="../img/bannerL.png"></div>
+	<div class="right"><img src="../img/bannerR.png"></div>		
+</div>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+
+//轮播
+var mySwiper1 = new Swiper('#swiper1',{
+		loop: false,
+		autoplay : 0,
+		speed : 600,
+		autoplayDisableOnInteraction : false
+	});
+
+//前进后退按钮
+$(".left").click(function(){
+	mySwiper1.slidePrev();
+	mySwiper2.slidePrev();
+})
+$(".right").click(function(){
+	mySwiper1.slideNext();
+	mySwiper2.slideNext();
+})
+
+</script>
+</body>	
+</html>

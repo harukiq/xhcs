@@ -1,0 +1,50 @@
+@charset "utf-8";
+.PlayEy {
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 130px;
+	height: 130px;
+	background: url(../img/bg_circle.png),url(../img/bg_center.png) no-repeat center;
+	margin-bottom: 80px;
+}
+
+.Btn {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 19px;
+	height: 19px;
+	background-color: yellow;
+	background: url(../img/btn-bg.png) no-repeat;
+	animation: Btn-bg 3s linear infinite;
+	margin-bottom: 80px;
+}
+
+.Play {
+	position: absolute;
+	width: 6px;
+	height: 7px;
+	background: red;
+	background: url(../img/pause.png) no-repeat;
+	transition: .5s;
+	margin-bottom: 80px;
+}
+
+.btns-bg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 6px auto;
+	width: 130px;
+	height: 130px;
+}
+
+@keyframes Btn-bg {
+	from {}
+	to {
+		transform: rotate(360deg);
+	}
+}

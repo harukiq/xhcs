@@ -1,0 +1,85 @@
+#container{
+    width: 1024px;
+    height: 768px;
+    background-image:url("../img/background.png");
+    margin: 0 auto;
+}
+
+#title{
+    width:130px ;
+    float: left;
+    margin-top: 20px;
+    margin-left: 32px;
+}
+
+#lh{
+    float: left;
+    clear: left;
+    margin-top: 80px;
+    margin-left: 0px;
+}
+
+#content{
+    width: 755px;
+    height: 600px;
+    float: right;
+    margin-top: -335px;
+    margin-right: 5px;
+}
+
+#duihuakuang{
+    width: 764px;
+    height: 130px;
+    float: right;
+    margin-top: 34px;
+    background-color:rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+#huajuan{
+    width: 130px;
+}
+
+#xq{
+    width: 260px;
+}
+
+#jhmb{
+    width: 755px;
+    height: 600px;
+}
+
+#left{
+    width: 50px;
+    position: relative;
+    top: -330px;
+    left: 20px;
+}
+
+#right{
+    width: 50px;
+    position: relative;
+    top: -330px;
+    left:630px;
+}
+
+#frame1{
+    width: 680px;
+    height: 520px;
+    position: relative;
+    top: -560px;
+    left: 36px;
+    border-style: none;
+}
+
+#next{
+    width: 50px;
+    position: relative;
+    right: -660px;
+}
+
+#lnext{
+    width: 50px;
+    position: relative;
+    left: 0px;
+}
